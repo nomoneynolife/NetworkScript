@@ -2,14 +2,14 @@
  - https://github.com/MoeClub/
  - https://github.com/hiCasper/Shell/
 
-####确保安装了所需软件
+#### 确保安装了所需软件
 > Debian/Ubuntu
  apt-get install -y xz-utils openssl gawk file
  
 > RedHat/CentOS
 yum install -y xz openssl gawk file
  
-####如果出现了错误
+#### 如果出现了错误
 
 > Debian/Ubuntu
 apt-get update
