@@ -1,2 +1,2 @@
 # Network-Script-s
-is WIN and LINUX script's File's
+从网络中收集的实用性脚本！
