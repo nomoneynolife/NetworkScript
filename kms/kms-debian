@@ -10,7 +10,7 @@
 # Description:       Start or stop the KMS Server
 ### END INIT INFO
 
-# Author: Teddysun <i@teddysun.com>
+# Author
 
 NAME="KMS Server"
 DAEMON=/usr/bin/vlmcsd
