@@ -34,14 +34,16 @@
 # KMS
 > KMS激活服务，slmgr命令激活Windows系统、Office
 #### 快速获取office路径
-@echo off  
-for /f "tokens=2 delims==" %%1 in ('assoc .doc')do (  
-    for /f "tokens=2 delims==" %%2 in ('ftype %%1')do (  
-        for %%3 in (%%2)do (if not defined p set p=%%~dp3  
-        )  
-    )  
-)  
-echo %p%  
+```bash
+@echo off
+for /f "tokens=2 delims==" %%1 in ('assoc .doc')do (
+    for /f "tokens=2 delims==" %%2 in ('ftype %%1')do (
+        for %%3 in (%%2)do (if not defined p set p=%%~dp3
+        )
+    )
+)
+echo %p%
+```
 #### 另存为x.bat
 ----------
 ### 激活步骤（管理员命令执行）
