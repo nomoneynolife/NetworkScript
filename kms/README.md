@@ -34,13 +34,28 @@
 # KMS
 > KMS激活服务，slmgr命令激活Windows系统、Office
 
+----------
 ### 激活步骤（管理员命令执行）
-1. 设置服务　　`slmgr -skms kms.zme.ink`
-2. 安装密钥　　`slmgr -ipk 版本对应秘钥`
+
+#### 可用服务
+- `kms.03k.org`
+
+1. 设置服务　　`slmgr -skms kms.03k.org`
+2. 安装密钥　　`slmgr -ipk 版本对应秘钥` 默认不用输入,如激活失败请指定KEY
 3. 激活系统　　`slmgr -ato`
 
-### 可用服务
-- `kms.03k.org`
+### Office（VOL 版本）激活步骤（管理员命令执行）
+1. 进入安装目录　　`cd "C:\Program Files (x86)\Microsoft Office\Office16"`
+    - 32 位默认一般为 `C:\Program Files (x86)\Microsoft Office\Office16`
+    - 64 位默认一般为 `C:\Program Files\Microsoft Office\Office16`
+    -  **Office16** 是 **Office 2016**
+    - **Office15** 是 **Office 2013**
+    - **Office14** 是 **Office 2010**
+    - 打开以上所说的目录，应该有个 `OSPP.VBS` 文件
+2. 注册KMS服务　　`cscript ospp.vbs /sethst:kms.zme.ink`
+3. 激活 Office　　`cscript ospp.vbs /act`
+----------
+
 
 ### [slmgr命令详解](slmgr.md)
 
@@ -193,18 +208,6 @@ Windows 7 企业版 E | C29WB-22CC8-VJ326-GHFJW-H9DH4
 - 在续订客户端激活之后，激活有效间隔重新开始
 - 综上所述，只要您不超过 180 天以上无法连接互联网，系统会自行续期保持激活状态
 
-----------
-### Office（VOL 版本）激活步骤（管理员命令执行）
-1. 进入安装目录　　`cd "C:\Program Files (x86)\Microsoft Office\Office16"`
-    - 32 位默认一般为 `C:\Program Files (x86)\Microsoft Office\Office16`
-    - 64 位默认一般为 `C:\Program Files\Microsoft Office\Office16`
-    -  **Office16** 是 **Office 2016**
-    - **Office15** 是 **Office 2013**
-    - **Office14** 是 **Office 2010**
-    - 打开以上所说的目录，应该有个 `OSPP.VBS` 文件
-2. 注册KMS服务　　`cscript ospp.vbs /sethst:kms.zme.ink`
-3. 激活 Office　　`cscript ospp.vbs /act`
-
 ### Office 密钥列表
 - Office 2019 & Office 2016
 - <https://docs.microsoft.com/en-us/DeployOffice/vlactivation/gvlks>
@@ -212,9 +215,6 @@ Windows 7 企业版 E | C29WB-22CC8-VJ326-GHFJW-H9DH4
 * <https://technet.microsoft.com/zh-cn/library/dn385360.aspx>
 - Office 2010
 - <https://technet.microsoft.com/zh-cn/library/ee624355(v=office.14).aspx>
-
-----------
-
 
 [源代码](https://forums.mydigitallife.net/threads/emulated-kms-servers-on-non-windows-platforms.50234/ "源码")
 
