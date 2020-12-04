@@ -30,10 +30,10 @@
 - 双击运行
 
 
-用法；http  
-vlmcs是用于检测KMS服务器  
-vlmcsd是用于搭建KMS服务器  
-vlmcsdmulti是上面两者的综合  
+
+## vlmcs是用于检测KMS服务器  
+## vlmcsd是用于搭建KMS服务器  
+## vlmcsdmulti是上面两者的综合  
 
 [源代码](https://forums.mydigitallife.net/threads/emulated-kms-servers-on-non-windows-platforms.50234/ "源码")
 
