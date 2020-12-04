@@ -12,7 +12,7 @@
 # Description:       Start or stop the KMS Server
 ### END INIT INFO
 
-# Author: Teddysun <i@teddysun.com>
+# Author: 
 
 # Source function library
 . /etc/rc.d/init.d/functions
