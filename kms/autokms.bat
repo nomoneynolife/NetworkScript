@@ -1,5 +1,5 @@
 @echo off
-mode con cols=15 lines=5
+mode con cols=15 lines=2
 color 3F
 ::网址：github.com/nomoneynolife/
 ::批处理：http://www.bathome.net/thread-43640-1-1.html
@@ -16,4 +16,5 @@ cls
 slmgr -skms kms.03k.org
 slmgr -ato
 cscript ospp.vbs /sethst:kms.03k.org
+cscript ospp.vbs /act
 pause&exit
