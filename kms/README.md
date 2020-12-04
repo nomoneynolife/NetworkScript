@@ -40,9 +40,7 @@
 3. 激活系统　　`slmgr -ato`
 
 ### 可用服务
-- `kms.cangshui.net`
-- `kms.zme.ink` 推荐使用，维护 **`CNAME`** 指向有效的服务
-+ `telnet kms.zme.ink 1688` 测试服务是否可用
+- `kms.03k.org`
 
 ### [slmgr命令详解](slmgr.md)
 
