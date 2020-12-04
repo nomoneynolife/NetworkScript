@@ -3,7 +3,7 @@
 ## LINUX安装KMS服务
 
 - 一键安装脚本
-- `wget --no-check-certificate https://github.com/teddysun/across/raw/master/kms.sh && chmod +x kms.sh && ./kms.sh`
+- `wget --no-check-certificate https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/kms/kms.sh && chmod +x kms.sh && ./kms.sh`
 
 * 查看端口
 * `netstat -nxtlp | grep 1688`
