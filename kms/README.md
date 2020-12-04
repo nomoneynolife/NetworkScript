@@ -33,6 +33,7 @@
 
 # KMS
 > KMS激活服务，slmgr命令激活Windows系统、Office
+#### 下载autokms.bat管理员模式运行,编辑文件12/14行修改KMS服务器地址;
 
 ----------
 ### 激活步骤（管理员命令执行）
@@ -54,7 +55,6 @@
     - 打开以上所说的目录，应该有个 `OSPP.VBS` 文件
 2. 注册KMS服务　　`cscript ospp.vbs /sethst:kms.03k.org`
 3. 激活 Office　　`cscript ospp.vbs /act`
-4. 便捷方法-打开cmd窗口,拖动ospp.vbs到cmd中
 ----------
 
 
