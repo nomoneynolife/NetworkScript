@@ -1,6 +1,6 @@
 # KMS 激活服务器  
 
-# LINUX安装KMS服务
+## LINUX安装KMS服务
 
 - 一键安装脚本
 - `wget --no-check-certificate https://github.com/teddysun/across/raw/master/kms.sh && chmod +x kms.sh && ./kms.sh`
@@ -23,7 +23,7 @@
 - 卸载
 - `./kms.sh uninstall`
 
-# Windows安装KMS服务
+## Windows安装KMS服务
 
 - 下载对应的文件
 - 放到自己喜欢的位置
