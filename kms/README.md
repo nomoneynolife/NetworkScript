@@ -33,16 +33,9 @@
 
 # KMS
 > KMS激活服务，slmgr命令激活Windows系统、Office
-#### 快速获取office路径
+#### 快速激活 下载autokms.bat 自定义服务器地址,如无可不修改;(18,21行)
 ```bash
-@echo off
-for /f "tokens=2 delims==" %%1 in ('assoc .doc')do (
-    for /f "tokens=2 delims==" %%2 in ('ftype %%1')do (
-        for %%3 in (%%2)do (if not defined p set p=%%~dp3
-        )
-    )
-)
-echo %p%
+https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/kms/autokms.bat
 ```
 #### 另存为x.bat
 ----------
