@@ -175,7 +175,7 @@ bash InstallNET.sh -c 6.9 -v 64 -a --mirror 'http://mirror.centos.org/centos'
 ### GD直连获取方法
 1.下载脚本
 ```
-wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/DDWIN/master/gdlink.sh && chmod +x gdlink.sh && ./gdlink.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/DDlinux/gdlink.sh && chmod +x gdlink.sh && ./gdlink.sh
 ```
 2.使用方法
 ```
