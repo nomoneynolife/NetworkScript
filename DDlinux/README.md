@@ -20,10 +20,10 @@ VNC端口为``` 1``` 或者``` 5901``` ,可自行尝试连接.(成功后VNC功�
 ## 傻瓜式一键脚本
 ```
 ##镜像文件在OneDrive
-wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/master/dd-od.sh && chmod +x dd-od.sh && ./dd-od.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/DDlinux/dd-od.sh && chmod +x dd-od.sh && ./dd-od.sh
 
 ##镜像文件在GoogleDrive
-wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/master/dd-gd.sh && chmod +x dd-gd.sh && ./dd-gd.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/DDlinux/dd-gd.sh && chmod +x dd-gd.sh && ./dd-gd.sh
 
 ```
 
