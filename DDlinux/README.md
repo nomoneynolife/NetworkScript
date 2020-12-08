@@ -19,11 +19,15 @@ VNC端口为``` 1``` 或者``` 5901``` ,可自行尝试连接.(成功后VNC功�
 
 ## 傻瓜式一键脚本
 ```
+
 ##镜像文件在OneDrive
 wget -N --no-check-certificate https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/DDlinux/dd-od.sh && chmod +x dd-od.sh && ./dd-od.sh
 
 ##镜像文件在GoogleDrive
 wget -N --no-check-certificate https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/DDlinux/dd-gd.sh && chmod +x dd-gd.sh && ./dd-gd.sh
+
+##另一个脚本
+wget --no-check-certificate -O AutoReinstall.sh https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/DDlinux/AutoReinstall.sh && bash AutoReinstall.sh
 
 ```
 
@@ -69,12 +73,12 @@ yum update
 
 ## 快速使用示例:
 ``` 	
-bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/veip007/dd/master/InstallNET.sh') -d 8 -v 64 -a
+bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/DDlinux/InstallNET.sh') -d 8 -v 64 -a
 ``` 
 
 ## 下载及说明:
 ``` 
-wget --no-check-certificate -qO InstallNET.sh 'https://raw.githubusercontent.com/veip007/dd/master/InstallNET.sh' && chmod +x InstallNET.sh
+wget --no-check-certificate -qO InstallNET.sh 'https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/DDlinux/InstallNET.sh' && chmod +x InstallNET.sh
 ``` 
 ```
 Usage:
