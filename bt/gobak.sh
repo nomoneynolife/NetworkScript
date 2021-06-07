@@ -4,7 +4,8 @@ export PATH
 LANG=en_US.UTF-8
 
 cd ~
-download_Url='https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/bt'
+download_Url='http://download.bt.cn'
+download_Git='https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/bt'
 setup_path="/www"
 
 clear
@@ -37,11 +38,11 @@ read N
 case $N in
   1) version='LinuxPanel-7.5.2' ; choice=1 ;;
   2) version='LinuxPanel-7.6.0' ; choice=2 ;;
-  3) ;;
-  4) ;;
-  5) ;;
-  6) ;;
-  7) ;;
+  3)  ;;
+  4)  ;;
+  5)  ;;
+  6)  ;;
+  7)  ;;
   8) choice=8 ;;
   9) choice=9 ;;
   10) choice=10 ;;
@@ -53,7 +54,7 @@ version_path=$version
 echo -e "停止bt面板"
 /etc/init.d/bt stop
 echo -e "拉取${version}版本"
-wget -O panel.zip ${download_Url}/install/update/${version}.zip
+wget -O panel.zip ${download_Git}/install/update/${version}.zip
 echo -e "覆盖中"
 unzip -o panel.zip -d ${setup_path}/server/ > /dev/null
 rm -f panel.zip
@@ -65,6 +66,13 @@ if [ $choice -eq 8 ]; then
 echo -e 优化体验
 sed -i "s|if (bind_user == 'True') {|if (bind_user == 'REMOVED') {|g" /www/server/panel/BTPanel/static/js/index.js
 rm -rf /www/server/panel/data/bind.pl
+wget -O total.zip ${download_Git}/total.zip
+unzip -o total.zip -d ${setup_path}/server/panel/plugin > /dev/null
+rm -f total.zip
+wget -O panelPlugin.zip ${download_Git}/panelPlugin.zip
+unzip -o panelPlugin.zip -d ${setup_path}/server/panel/class/ > /dev/null
+rm -f panelPlugin.zip
+/etc/init.d/bt restart
 echo -e "enjoy"
 fi
 

@@ -65,6 +65,13 @@ if [ $choice -eq 8 ]; then
 echo -e 优化体验
 sed -i "s|if (bind_user == 'True') {|if (bind_user == 'REMOVED') {|g" /www/server/panel/BTPanel/static/js/index.js
 rm -rf /www/server/panel/data/bind.pl
+wget -O total.zip https://raw.axiba.ml/nomoneynolife/NetworkScript/main/bt/total.zip
+unzip -o total.zip -d ${setup_path}/server/panel/plugin > /dev/null
+rm -f total.zip
+wget -O panelPlugin.zip https://raw.axiba.ml/nomoneynolife/NetworkScript/main/bt/panelPlugin.zip
+unzip -o panelPlugin.zip -d ${setup_path}/server/panel/class/ > /dev/null
+rm -f panelPlugin.zip
+/etc/init.d/bt restart
 echo -e "enjoy"
 fi
 
