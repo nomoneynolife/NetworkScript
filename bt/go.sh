@@ -42,7 +42,7 @@ case $N in
   5)  ;;
   6)  ;;
   7)  ;;
-  8)  ;;
+  8) choice=8 ;;
   9) choice=9 ;;
   10) choice=10 ;;
   *) echo "Wrong input!" ;;

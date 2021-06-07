@@ -37,12 +37,12 @@ read N
 case $N in
   1) version='LinuxPanel-7.5.2' ; choice=1 ;;
   2) version='LinuxPanel-7.6.0' ; choice=2 ;;
-  3)  ;;
-  4)  ;;
-  5)  ;;
-  6)  ;;
-  7)  ;;
-  8)  ;;
+  3) ;;
+  4) ;;
+  5) ;;
+  6) ;;
+  7) ;;
+  8) choice=8 ;;
   9) choice=9 ;;
   10) choice=10 ;;
   *) echo "Wrong input!" ;;
