@@ -21,14 +21,14 @@ echo "###########################################################"
 echo "                                                           "
 echo ""
 echo "请选择:"
-echo "  1)  更新到宝塔 7.5.2并那个啥"
-echo "  2)  更新到宝塔 7.6.0并那个啥"
+echo "  1)  更新到宝塔 7.5.2"
+echo "  2)  更新到宝塔 7.6.0"
 echo "  3)  "
 echo "  4)  "
 echo "  5)  "
 echo "  6)  "
 echo "  7)  "
-echo "  8)  "
+echo "  8)  优化体验(必选)"
 echo "  9)  全新安装"
 echo "  10) 卸载宝塔"
 echo ""
@@ -59,11 +59,13 @@ unzip -o panel.zip -d ${setup_path}/server/ > /dev/null
 rm -f panel.zip
 echo -e "启动bt面板"
 /etc/init.d/bt start
+fi
+
+if [ $choice -eq 8 ]; then
 echo -e 优化体验
 sed -i "s|if (bind_user == 'True') {|if (bind_user == 'REMOVED') {|g" /www/server/panel/BTPanel/static/js/index.js
 rm -rf /www/server/panel/data/bind.pl
 echo -e "enjoy"
-exit
 fi
 
 if [ $choice -eq 10 ]; then
