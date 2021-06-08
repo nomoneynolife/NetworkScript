@@ -100,7 +100,7 @@ Get_Dist_Name()
     elif grep -Eqi "Ubuntu" /etc/issue || grep -Eq "Ubuntu" /etc/*-release; then
         DISTRO='Ubuntu'
         PM='apt'
-	elif grep -Eqi "Oracle" /etc/issue || grep -Eq "Oracle" /etc/*-release; then
+    elif grep -Eqi "Oracle" /etc/issue || grep -Eq "Oracle" /etc/*-release; then
         DISTRO='Oracle'
         PM='apt'
     elif grep -Eqi "Deepin" /etc/issue || grep -Eq "Deepin" /etc/*-release; then
