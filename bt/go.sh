@@ -100,7 +100,10 @@ Get_Dist_Name()
     elif grep -Eqi "Ubuntu" /etc/issue || grep -Eq "Ubuntu" /etc/*-release; then
         DISTRO='Ubuntu'
         PM='apt'
-	elif grep -Eqi "Deepin" /etc/issue || grep -Eq "Deepin" /etc/*-release; then
+	elif grep -Eqi "Oracle" /etc/issue || grep -Eq "Oracle" /etc/*-release; then
+        DISTRO='Oracle'
+        PM='apt'
+    elif grep -Eqi "Deepin" /etc/issue || grep -Eq "Deepin" /etc/*-release; then
         DISTRO='Deepin'
         PM='apt'
     elif grep -Eqi "Raspbian" /etc/issue || grep -Eq "Raspbian" /etc/*-release; then
@@ -115,6 +118,9 @@ Get_Dist_Name
 
 if [ $DISTRO = "CentOS" ] ; then
 echo "系统版本为CentOS，为您运行对应的版本"
+wget -O install.sh ${download_Url}/install/install_6.0.sh && sh install.sh
+if [ $DISTRO = "Oracle" ] ; then
+echo "系统版本为Oracle，为您运行对应的版本"
 wget -O install.sh ${download_Url}/install/install_6.0.sh && sh install.sh
 elif [ $DISTRO = "Ubuntu" ] ; then
 echo "系统版本为Ubuntu，为您运行对应的版本"
