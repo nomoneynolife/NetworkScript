@@ -131,5 +131,7 @@ echo "系统版本为Fedora，为您运行对应的版本"
 wget -O install.sh ${download_Url}/install/install_6.0.sh && bash install.sh
 else
 echo "What?"
+echo "你这是神马系统，脚本还未支持！"
+echo "请手动输入命令安装 wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh"
 fi
 fi
