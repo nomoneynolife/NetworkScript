@@ -30,6 +30,10 @@ case $N in
 esac
 
 if [ $choice -eq 1 ]; then
+echo -e "检查系统已安装的版本"
+python -V
+python2 -V
+python3 -V
 echo -e "请输入需要安装的版本;比如 3.8.0 "
 echo -e "必须严格输入版本号 x.x.x "
 echo -e "版本查看 https://www.python.org/ftp/python/"
