@@ -13,3 +13,8 @@
 * 启动脚本: 在已经运行过如下一键脚本的情况下  
 `wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/Gost/gost.sh && chmod +x gost.sh && ./gost.sh`  
 * 再次运行本脚本只需要输入`./gost.sh`回车即可  
+  
+#### 国内机  
+* 启动脚本: 在已经运行过如下一键脚本的情况下  
+`wget --no-check-certificate -O gost-gh.sh https://ghproxy.com/https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/Gost/gost-gh.sh && chmod +x gost-gh.sh && ./gost-gh.sh`  
+* 再次运行本脚本只需要输入`./gost.sh`回车即可  
