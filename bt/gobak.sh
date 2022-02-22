@@ -24,7 +24,7 @@ echo ""
 echo "请选择:"
 echo "  1)  更新到宝塔 7.5.2"
 echo "  2)  更新到宝塔 7.6.0"
-echo "  3)  "
+echo "  3)  更新到宝塔 7.7.0"
 echo "  4)  "
 echo "  5)  "
 echo "  6)  "
@@ -38,7 +38,7 @@ read N
 case $N in
   1) version='LinuxPanel-7.5.2' ; choice=1 ;;
   2) version='LinuxPanel-7.6.0' ; choice=2 ;;
-  3)  ;;
+  3) version='LinuxPanel-7.7.0' ; choice=3 ;;
   4)  ;;
   5)  ;;
   6)  ;;
@@ -49,7 +49,7 @@ case $N in
   *) echo "Wrong input!" ;;
 esac
 
-if [ $choice -eq 1 ] || [ $choice -eq 2 ]; then
+if [ $choice -eq 1 ] || [ $choice -eq 2 ] || [ $choice -eq 3 ]; then
 version_path=$version
 echo -e "停止bt面板"
 /etc/init.d/bt stop
