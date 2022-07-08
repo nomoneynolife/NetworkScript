@@ -53,7 +53,7 @@ version_path=$version
 echo -e "停止bt面板"
 /etc/init.d/bt stop
 echo -e "拉取${version}版本"
-wget -O panel.zip ${download_Url}/install/update/${version}.zip
+wget -O panel.zip ${download_Url}/${version}.zip
 echo -e "覆盖中"
 unzip -o panel.zip -d ${setup_path}/server/ > /dev/null
 rm -f panel.zip
