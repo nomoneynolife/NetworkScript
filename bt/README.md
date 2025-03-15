@@ -8,7 +8,7 @@
 
 # 调用备份文件
 ```Bash
-curl -sSO https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/bt/go.sh && bash go.sh
+wget -q -O go.sh https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/bt/go.sh && bash go.sh
 ```
  
 **Centos/Ubuntu/Debian安装命令 独立运行环境（py3.7）：**
