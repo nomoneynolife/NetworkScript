@@ -29,7 +29,6 @@ echo "  6)  "
 echo "  7)  "
 echo "  8)  "
 echo "  9)  卸载宝塔""
-echo "
 echo -n "请输入编号: "
 read N
 case $N in
