@@ -30,6 +30,7 @@ echo "  7)  "
 echo "  8)  "
 echo "  9)  卸载宝塔""
 echo -n "请输入编号: "
+echo ""
 read N
 case $N in
   1) version='LinuxPanel-7.7.0' ; choice=1 ;;
