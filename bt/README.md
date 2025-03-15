@@ -8,9 +8,8 @@
 
 # 调用备份文件
 ```Bash
-curl -sSO https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/bt/go.sh && chmod +x go.sh && bash go.sh
+curl -sSO https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/bt/go.sh && bash go.sh
 ```
-* 再次运行本脚本只需要输入`./go.sh`回车即可 
  
 **Centos/Ubuntu/Debian安装命令 独立运行环境（py3.7）：**
 
