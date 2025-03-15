@@ -4,10 +4,25 @@
 
 ***  
 #### 完整食用教程  
-# 调用官方文件
-`wget --no-check-certificate -O go.sh https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/bt/go.sh && chmod +x go.sh && ./go.sh`  
-* 再次运行本脚本只需要输入`./gost.sh`回车即可  
+# 调用官方文件 - 官方已和谐
+
 # 调用备份文件
-`wget --no-check-certificate -O gobak.sh https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/bt/gobak.sh && chmod +x gobak.sh && ./gobak.sh`  
-* 再次运行本脚本只需要输入`./gost.sh`回车即可 
+`wget --no-check-certificate -O go.sh https://raw.githubusercontent.com/nomoneynolife/NetworkScript/main/bt/go.sh && chmod +x go.sh && ./go.sh`  
+* 再次运行本脚本只需要输入`./go.sh`回车即可 
  
+**Centos/Ubuntu/Debian安装命令 独立运行环境（py3.7）：**
+
+**如果遇到重启后宝塔乱码 请修改语言区域：**
+
+
+```Bash
+localectl set-locale LANG=en_US.UTF-8
+nano /etc/default/locale
+```
+
+```Bash
+LANG="en_US.UTF-8"
+LC_ALL="en_US.UTF-8"
+```
+
+修改后保存文件，重启即可。
