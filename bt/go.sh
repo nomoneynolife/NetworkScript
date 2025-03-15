@@ -43,7 +43,7 @@ show_menu() {
 # 安装函数
 install_bt() {
     echo -e "${GREEN}正在安装宝塔 7.7.0...${RESET}"
-    if curl -sSO https://raw.githubusercontent.com/nomoneynolife/NetworkScript/refs/heads/main/bt/install/install_panel.sh; then
+    if wget -q -O install_panel.sh https://raw.githubusercontent.com/nomoneynolife/NetworkScript/refs/heads/main/bt/install/install_panel.sh; then
         bash install_panel.sh
     else
         echo -e "${RED}错误：安装脚本下载失败，请检查网络连接！${RESET}"
@@ -83,7 +83,7 @@ optimize_bt() {
 # 卸载函数
 uninstall_bt() {
     echo -e "${YELLOW}正在卸载宝塔面板...${RESET}"
-    if curl -sSO https://raw.githubusercontent.com/nomoneynolife/NetworkScript/refs/heads/main/bt/install/bt-uninstall.sh; then
+    if wget -q -O bt-uninstall.sh https://raw.githubusercontent.com/nomoneynolife/NetworkScript/refs/heads/main/bt/install/bt-uninstall.sh; then
         bash bt-uninstall.sh
     else
         echo -e "${RED}错误：卸载脚本下载失败，请检查网络连接！${RESET}"
